@@ -25,5 +25,14 @@
   <%= @doctor.phone_number %>
 </p>
 
+<p>
+  <ul>
+    <strong>Patients</strong>
+    <% @doctor.patients.each do |patient| %>
+    <li><%=patient.first_name%> <%=patient.last_name%></li>
+    <%end%>
+  </ul>
+</p>
+
 <%= link_to 'Edit', edit_doctor_path(@doctor) %> |
 <%= link_to 'Back', doctors_path %>

@@ -22,8 +22,13 @@
 
 <p>
   <strong>Doctor:</strong>
-  <%= @patient.doctor.first_name %>
+  <%= @patient.doctor.first_name %> 
+  <%= @patient.doctor.last_name%><br>
+  <%= @patient.doctor.phone_number %><br>
+  <%= @patient.doctor.email%>
 </p>
+
+
 
 <%= link_to 'Edit', edit_patient_path(@patient) %> |
 <%= link_to 'Back', patients_path %>

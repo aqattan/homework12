@@ -6,7 +6,6 @@ class CreatePatients < ActiveRecord::Migration
       t.string :email
       t.string :phone_number
       t.belongs_to :doctor, index: true, foreign_key: true
-
       t.timestamps null: false
     end
   end
